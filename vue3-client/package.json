@@ -1,0 +1,56 @@
+{
+  "name": "vue3-client",
+  "version": "1.0.0",
+  "private": true,
+  "author": {
+    "name": "Adnan S Hussain"
+  },
+  "scripts": {
+    "serve": "nodemon -w vue.config.js -x 'vue-cli-service serve --port 8080'",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "json-server": "json-server ./data/thewisebook.json -s ./data/ -w"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
+    "ashlib": "file:../../ashlib",
+    "bootstrap": "^5.0.1",
+    "core-js": "^3.6.5",
+    "vue": "^3.0.0",
+    "vue-router": "^4.0.8"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^7.0.0",
+    "node-sass": "^6.0.0",
+    "sass-loader": "^10.2.0",
+    "webpack-chain": "^6.5.1"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/vue3-essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {
+      "strict": "off",
+      "no-constant-condition": "off",
+      "no-unused-vars": "off",
+      "vue/no-unused-components": "off"
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
